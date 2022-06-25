@@ -1,359 +1,528 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Software Solutions, by LiquidJelly // It's a strange name, but the domain was free.</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/fonts/stylesheet.css" >
+  <title>Software Solutions, by LiquidJelly // It's a strange name, but the domain was free.</title>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+      crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/fonts/stylesheet.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> 
+
+  <link href="https://cdn.jsdelivr.net/npm/@fontawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+        rel="stylesheet">
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  	<script type="text/javascript">
+  <script type="text/javascript">
 
-  	  var _gaq = _gaq || [];
-  	  _gaq.push(['_setAccount', 'UA-10060584-1']);
-  	  _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10060584-1']);
+    _gaq.push(['_trackPageview']);
 
-  	  (function() {
-  	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  	  })();
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 
-  	</script>
-    <style type="text/css">
-      h1 {
-        font-size: 20em;
-        font-family: 'FS Elliot Pro';
-        font-weight: 900;
-        font-style: normal;
-      }
-      h2 {
-        font-size: 2em;
-        font-family: 'FS Elliot Pro';
-        font-weight: bold;
-        font-style: normal;
-      }
-      body{
-          font-size: 1.7em;
-          font-family: 'FS Elliot Pro';
-          font-weight: 300;
-          font-style: normal;
-          line-height: 2;
-          text-transform: none;
-          min-height: 40px;
-          color: #deedff;
-          background-color: #0561FF;
-      }
-      .navbar, .jumbotron {
-        background-color: #1C2185;
-        color: #deedff;
-        font-family: 'FS Elliot Pro';
-        font-weight: bold;
-        font-style: normal;
-      }
-      .navbar-brand{
-        text-shadow:none;
-      }
-    </style>
-  </head>
+  </script>
+  <style type="text/css">
+    h1 {
+      font-size: 4em;
+      font-family: 'FS Elliot Pro';
+      font-weight: 900;
+      font-style: normal;
+      padding-top:  0.9em;
+    }
 
-  <body>
+    h2 {
+      font-size: 1.5em;
+      font-family: 'FS Elliot Pro';
+      font-weight: bold;
+      font-style: normal;
+    }
 
-    <nav class="navbar navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <span class="navbar-brand" >LiquidJelly Software Solutions // It's a strange name but the domain was free</span>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <!--<form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>-->
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+    body {
+      font-size: 1em;
+      font-family: 'FS Elliot Pro';
+      font-weight: 300;
+      font-style: normal;
+      line-height: 2;
+      text-transform: none;
+      min-height: 40px;
+      color: #deedff;
+      background-color: #0561FF;
+    }
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>// software solutions</h1>
-        <p>We build software. We've been doing it for over 20 years and we think we're pretty good at it.</p>
-        <p>We'll deliver your software on time and on budget and we'll support your software for as long as you need us to.</p>
-        <!-- <p>Oh, and we'll give you a guaranteed return on investment too. Who else can say that?</p>
-        <p><a class="btn btn-primary btn-lg" href="mailto:tellmemore@liquidjelly.co.uk?subject=Tell me more" role="button">OK you got me, lets chat &raquo;</a></p> -->
+    p
+    {
+      color: #232323;
+      line-height: 1.3em;
+      font-size: 1.2em;
+    }
+
+    .blue  p {
+      color: white;
+      font-size: 1.3em;
+      font-weight: 600;
+      padding-top: 0.7em;
+    }
+
+    .blue h3{
+      color: #FF707D;
+      font-size: 1.3em;
+      font-weight: 900;
+      padding-top: 0.7em;
+    }
+
+    .blue {
+      background-color: #0561FF;
+      color: #fff;
+    }
+   
+    .pale {
+      background-color: #fff;
+      color: #0561FF;
+    }
+
+    .pale h2
+    {      
+      color: #0561FF;
+      font-size: 3em;
+      font-weight: 900;
+      padding-top: 0.7em;
+      text-align: center;
+    }
+    
+    .pale h3
+    {      
+      color: #0561FF;
+      font-size: 1.5em;
+      font-weight: 600;
+      padding-top: 0.7em;
+      text-align: center;
+      padding:1em;
+    }
+    
+    .pale h4
+    {      
+      color: #FF707D;
+      font-size: 1.5em;
+      font-weight: 600;
+      padding-top: 0.7em;
+      text-align: center;
+      padding:1em;
+    }
+
+    .navbar,
+    .jumbotron {
+      background-color: #0561FF;
+      color: #deedff;
+      font-family: 'FS Elliot Pro';
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    .navbar-nav > li > a{
+      text-shadow: none;
+      color: #fff;
+    }
+
+    .navbar-nav > li > a:hover{
+      text-decoration: underline;
+      background-color: #0561FF;
+    }
+
+    .how{
+      padding: 2em;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar mt-5">
+    <div class="container">
+      <div id="navbar" class="navbar-collapse collapse">
+        <img src="/images/logos/2x/Asset 1@2x.png" width="200px" class="navbar-brand">
+        
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#home_page">Home</a></li>
+            <li><a href="#about_page">About</a></li>
+            <li><a href="#portfolio_page">Portfolio</a></li>
+            <li><a href="#contact_page">Contact</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
+  <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
+      <img src="/images/logos/2x/Asset 1@2x.png" width="200px" class="navbar-brand">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how">How</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://markcooper.blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid blue">
+
+    <div class="container pt-5">
       <div class="row">
-        <div class="col-md-12">
-          and this is how we do it....
+        <div class="col-md-6">
+          <h1 class="">Smarter, faster, software solutions.</h1>
+          <p class="">
+            We've been crafting software for over 20 years <br />
+            We'll deliver your software on time and on budget and <br />
+            we'll support your software for as long as you need us to.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="/images/Homepage.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid pale">
+
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>And this is how we do it...</h1>
         </div>
       </div>
       <div class="row">
+        <div class="col-md-4 how">
+          <img src="/images/Gather.png" class="img-fluid" />
+          <h2 class="text-center">Gather</h2>
+          <p class="text-center">You know your business. We know how to ask you the right questions, so you can tell us about your business.
+            This ensures we can build you the right software first time.</p>
+        </div>
+        <div class="col-md-4 how">
+          <img src="/images/Design.png" class="img-fluid" />
+          <h2 class="text-center">Design</h2>
+          <p class="text-center">Writing good software isn't hard, but it can take time. Our designs are thoughtful, appropriate and simple.
+            We choose the right technology in the right places and we don't chase fads or fashions.</p>
+        </div>
+        <div class="col-md-4 how">
+          <img src="/images/Build.png" class="img-fluid" />
+          <h2 class="text-center">Build</h2>
+          <p class="text-center">We use the right tools, at the right time, in the right way. We like to build fast and we like to build
+            frequently. We thrive off early customer engagement. We're happy to be Agile or Rational. Or somewhere in
+            between.</p>
+        </div>
 
-        <div class="col-md-4">
-          <h2>// gather</h2>
-          <p>You know your business. We know how to ask you the right questions, so you can tell us about your business. This ensures we can build you the right software first time.</p>
+        <div class="col-md-4 how">
+          <img src="/images/Test.png" class="img-fluid" />
+          <h2 class="text-center">Test</h2>
+          <p class="text-center">We utilise the latest tools to check and recheck our code on every build. Software is never bug free, so we
+            work hard to track, report and prioritise bugs. Then we squash them.</p>
         </div>
-        <div class="col-md-4">
-          <h2>// design</h2>
-          <p>Writing good software isn't hard, but it can take time. Our designs are thoughtful, appropriate and simple. We choose the right technology in the right places and we don't chase fads or fashions.</p>
+        <div class="col-md-4 how">
+          <img src="/images/Deploy.png" class="img-fluid" />
+          <h2 class="text-center">Deploy</h2>
+          <p class="text-center">Your software has to be deployed, be it cloud, server or desktop. We'll ensure efficency, scalability and
+            security.</p>
         </div>
-        <div class="col-md-4">
-          <h2>// build</h2>
-          <p>We use the right tools, at the right time, in the right way. We like to build fast and we like to build frequently. We thrive off early customer engagement. We're happy to be Agile or Rational. Or somewhere in between.</p>
-       </div>
-     </div>
-     <div class="row">
-        <div class="col-md-4">
-         <h2>// test</h2>
-         <p>We utilise the latest tools to check and recheck our code on every build. Software is never bug free, so we work hard to track, report and prioritise bugs. Then we squash them.</p>
-        </div>
-        <div class="col-md-4">
-          <h2>// deploy</h2>
-          <p>Your software has to be deployed, be it cloud, server or desktop. We'll ensure efficency, scalability and security.</p>
-        </div>
-        <div class="col-md-4">
-          <h2>// support</h2>
-          <p>Bespoke software is all about partnership. We don't dump and run. The
+        <div class="col-md-4 how">
+          <img src="/images/Support.png" class="img-fluid" />
+          <h2 class="text-center">Support</h2>
+          <p class="text-center">Bespoke software is all about partnership. We don't dump and run. The
             code we create defines us and we'll stand by it for as long as you need us.</p>
         </div>
       </div>
+    </div>
+  </div>
 
-      <hr>
-
-      <div class="row">
-         <div class="col-md-12">
-           <h2><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> // We love technology</h2>
-           <p>We spend our lives surrounded by technology. We embrace it and learn how to use it properly. We use our experience to ensure we can offer the right technology at the right time.
-         </div>
-         <div class="col-md-4">
-          <h3>&lt; web /&gt;</h3>
-          <ul>
-            <li>ASP.NET</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Node.Js</li>
-            <li>PHP</li>
-          </ul>
-         </div>
-         <div class="col-md-4">
-           <h3>&lt; integration /&gt;</h3>
-           <ul>
-             <li>PayPal</li>
-             <li>eBay</li>
-             <li>Amazon</li>
-             <li>SmartFocus</li>
-             <li>Google</li>
-             <li>Barclays</li>
-           </ul>
-         </div>
-         <div class="col-md-4">
-           <h3>&lt; internet of things /&gt;</h3>
-           <ul>
-             <li>Raspberry Pi</li>
-             <li>Arduino</li>
-             <li>Spark Core</li>
-             <li>3D Printing</li>
-             <li>Imaging</li>
-             <li>Data logging</li>
-           </ul>
-         </div>
-       </div>
-
-      <hr>
-
+  <div class="container-fluid blue">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> // We've been round the block a few times...</h2>
-          <p>Over the past 20 years, we have had the privilege of working with many of the UK's most prestigious companies on a wide variety of projects.</p>
-
-          <p>Our technical expertise and dedication ensure we get repeat business and are on first choice supplier list for all of our current customers.</p>
-
-          <p>We're proudest of the work we've done on the following projects;</p>
+          <h1 class="text-center">We <i class='fas fa-heart' style='color:#FF707D'></i> technology</h1>
+          
         </div>
+        <div class="col-md-6">
+          <img src="/images/Coding2.png" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <p>We spend our lives surrounded by technology. We embrace it and learn how to use it properly. We use our
+                experience to ensure we can offer the right technology at the right time.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Web</h3>
+              <ul>
+                <li>ASP.NET</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.Js</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Integration</h3>
+              <ul>
+                <li>Shopify</li>
+                <li>PayPal</li>
+                <li>eBay</li>
+                <li>Amazon</li>
+                <li>SmartFocus</li>
+                <li>Google</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Internet of things</h3>
+              <ul>
+                <li>Raspberry Pi</li>
+                <li>Arduino</li>
+                <li>Spark Core</li>
+                <li>3D Printing</li>
+                <li>Imaging</li>
+                <li>Data logging</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
 
+    </div>
+  </div>
+
+  <div class="container-fluid pale">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-12">
+          <h1 class="text-center">We've been round the block.</h1>
+        </div>
+      </div>
+        
+      <div class="row justify-content-md-center">
+        <div class="col-md-8">
+          <h3>Over the past 20 years, we have had the privilege of working with many of the UK's most prestigious
+            companies on a wide variety of projects.</h3>
+        </div>
+      </div>
+
+      <div class="row ">
         <div class="col-md-4">
           <h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Parcel Tracking</h3>
-          <p>In addition to leading the conversion of the main UKMail website (static to CMS) we also played an integral role in the design and devleopment of the most used feature on the website - the online parcel tracker. This application processes over 1m hits per month, and aggregates information from multiple backend systems.</p>
+          <p>In addition to leading the conversion of the main UKMail website (static to CMS) we also played an integral
+            role in the design and devleopment of the most used feature on the website - the online parcel tracker. This
+            application processes over 1m hits per month, and aggregates information from multiple backend systems.</p>
         </div>
 
         <div class="col-md-4">
           <h3><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> eCommerce</h3>
-          <p>End-to-end design, development and support of www.ipostparcels.com; an industry leading eCommerce application. The application integrates with PayPal, Barclays, eBay and SmartFocus and processes in excess of £8m revenue annually.</p>
+          <p>End-to-end design, development and support of www.ipostparcels.com; an industry leading eCommerce
+            application. The application integrates with PayPal, Barclays, eBay and SmartFocus and processes in excess
+            of £8m revenue annually.</p>
         </div>
 
         <div class="col-md-4">
           <h3><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Document Generation</h3>
-          <p>An automated tool to generate technical documentation for a sprawling environment of both managed and legacy systems. The tool iterates and compares multiple products, in multiple versions installed across multiple servers, and outputs a Wiki, that is always up-do-date. </p>
+          <p>An automated tool to generate technical documentation for a sprawling environment of both managed and
+            legacy systems. The tool iterates and compares multiple products, in multiple versions installed across
+            multiple servers, and outputs a Wiki, that is always up-do-date. </p>
+        </div>
+
+      </div>
+      
+      <div class="row ">
+      <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Parcel tracking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Ecommerce</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Document generation</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      </div>
+    </div>
+
+        
+      <div class="row justify-content-md-center">
+        <div class="col-md-8">
+
+          <h3>Our technical expertise and dedication ensure we get repeat business and are on first choice supplier list
+            for all of our current customers.</h3>
+
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <div class="container-fluid blue">
+    <div class="container">
       <div class="row">
 
-        <div class="col-md-12">
-          <p>We've also worked on projects for the following companies, both directly and indirectly;</p>
-          <hr>
-        </div>
+          <div class="col-md-12">
+            <h1 class="text-center">Trusted by leading brands</h1>
+          </div>
+          
 
-        <div class="col-md-3">
-          <h3>UKMail</h3>
-        </div>
-        <div class="col-md-3">
-          <h3>iPostParcels</h3>
-        </div>
-        <div class="col-md-3">
-          <h3>o2</h3>
-        </div>
-        <div class="col-md-3">
-          <h3>Orange</h3>
+          <div class="col-md-3">
+            <h3>Telephony</h3>
+            <ul>
+              <li>o2</li>
+              <li>Orange</li>
+              <li>EE</li>
+              <li>Three</li>
+              <li>Vodaphone</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Retail / Logistics</h3>
+            <ul>
+              <li>Rowlands Pharmacy</li>
+              <li>Phoenix Medical</li>
+              <li>DHL</li>
+              <li>UKMail</li>
+              <li>iPostParcels</li>
+              <li>Superdry</li>
+              <li>Diesel</li>
+              <li>Cotswold Outdoor</li>
+              <li>Argos</li>
+              <li>Colmore Comics</li>
+            </ul>
+          </div>
+          
+
+          <div class="col-md-3">
+            <h3>Financial services</h3>
+            <ul>
+              <li>eg solutions</li>
+              <li>Aviva</li>
+              <li>Co-op Financial Services</li>
+              <li>Legal and General</li>
+              <li>Wesleyan</li>
+              <li>Nationwide</li>
+              <li>Lafferty International</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h3>Motorsport / aerospace</h3>
+            <ul>
+              <li>Stewart Grand Prix</li>
+              <li>Mallock Engineering</li>
+              <li>Rolls Royce</li>
+              <li>Westinghouse</li>
+              <li>ATC Belcan</li>
+            </ul>
+          </div>  
         </div>
       </div>
+    </div>
+  </div>
 
-        <div class="row">
-          <div class="col-md-3">
-            <h3>EE</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Vodaphone</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Superdry</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Diesel</h3>
-          </div>
-        </div>
+  
 
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Three</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Cotswold Outdoor</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Argos</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>eg solutions</h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Aviva</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Co-op Financial Services</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Legal and General</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Wesleyan</h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Nationwide</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Colmore Comics</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Lafferty International</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Rolls Royce</h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-3">
-            <h3>Westinghouse</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Stewart Grand Prix</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Mallock Engineering</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>ATC Belcan</h3>
-        </div>
-
-      </div>
-
-      <hr>
-
+  <!-- <div class="container-fluid pale">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> // We're Hiring</h2>
-          <p>We are always on the lookout for talented designers and developers. You have to be self starting and motivated. You must be comfortable investigating new technnology as well as supporting older systems.</p>
+          <h1 class="text-center"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></h2>
+          <p>We are always on the lookout for talented designers and developers. You have to be self starting and
+            motivated. You must be comfortable investigating new technnology as well as supporting older systems.</p>
           <p>We're situated right in the middle of the UK</p>
         </div>
         <div class="col-md-6">
           <h3><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Developer</h3>
           <p>Full stack developer required. You will be working with ASP.NET, Xamarin and Azure.</p>
-          <p>Your current skillset is actually mostly irrelevent - we are more interested in attitude rather than recollection of syntax.</p>
+          <p>Your current skillset is actually mostly irrelevent - we are more interested in attitude rather than
+            recollection of syntax.</p>
         </div>
         <div class="col-md-6">
           <h3><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Designer</h3>
-          <p>Modern software designer. We like clean and flat. We like Bootstrap and Google Material guidelines. You'll need to be, or willing to become, a CSS ninja.</p>
+          <p>Modern software designer. We like clean and flat. We like Bootstrap and Google Material guidelines. You'll
+            need to be, or willing to become, a CSS ninja.</p>
           <p>You'll need a good eye for detail and you'll need to care if the pixels aren't aligned.</p>
         </div>
         <div class="col-md-12">
           <hr>
-          <p>Remuneration for all roles is generous and will be based on experience. NO AGENCIES. Want to find out more? <a href="mailto:iwanttoworkforyou@liquidjelly.co.uk">Email us</a> your CV and we'll get right back to you. Seriously, no agencies. </p>
+          <p>Remuneration for all roles is generous and will be based on experience. NO AGENCIES. Want to find out more?
+            <a href="mailto:iwanttoworkforyou@liquidjelly.co.uk">Email us</a> your CV and we'll get right back to you.
+            Seriously, no agencies. </p>
         </div>
       </div>
-      <hr>
+    </div> -->
+
+  </div>
 
       <footer>
         <p>
-          &copy; 2011 - 2016 LiquidJelly Ltd is a registered company in England and Wales. <br/>
-	        Registered Company Number: 07530917 | VAT Registration Number: 106 4284 35 <br/>
+          &copy; 2011 - 2016 LiquidJelly Ltd is a registered company in England and Wales. <br />
+          Registered Company Number: 07530917 | VAT Registration Number: 106 4284 35 <br />
         </p>
       </footer>
     </div> <!-- /container -->
+  </div>
+  </div>
 
 
-  </body>
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+          crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e1ea18a679.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
