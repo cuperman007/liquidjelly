@@ -5,7 +5,7 @@ The main corporate website for LiquidJelly Ltd. This is a holding page website.
 ### What is this repository for? ###
 
 * www.liquidjelly.co.uk
-* Version 1.1
+* Version 2.0
 
 ### Continuous Deployment ###
 

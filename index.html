@@ -14,6 +14,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/fonts/stylesheet.css" >
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
@@ -21,9 +22,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Kanit:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,900' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -47,28 +45,43 @@
     <style type="text/css">
       h1 {
         font-size: 20em;
-        font:;
-
+        font-family: 'FS Elliot Pro';
+        font-weight: 900;
+        font-style: normal;
       }
       h2 {
         font-size: 2em;
-        font:900;
+        font-family: 'FS Elliot Pro';
+        font-weight: bold;
+        font-style: normal;
       }
       body{
           font-size: 1.7em;
-          font-family: 'Merriweather', sans-serif;
+          font-family: 'FS Elliot Pro';
+          font-weight: 300;
+          font-style: normal;
           line-height: 2;
-          font-weight: 400;
           text-transform: none;
           min-height: 40px;
-          color: #555;
+          color: #deedff;
+          background-color: #0561FF;
+      }
+      .navbar, .jumbotron {
+        background-color: #1C2185;
+        color: #deedff;
+        font-family: 'FS Elliot Pro';
+        font-weight: bold;
+        font-style: normal;
+      }
+      .navbar-brand{
+        text-shadow:none;
       }
     </style>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -77,7 +90,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">LiquidJelly Software Solutions // It's a strange name but the domain was free</a>
+          <span class="navbar-brand" >LiquidJelly Software Solutions // It's a strange name but the domain was free</span>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <!--<form class="navbar-form navbar-right">
@@ -97,43 +110,47 @@
     <div class="jumbotron">
       <div class="container">
         <h1>// software solutions</h1>
-	      <p>I've been creating software for nearly 20 years. I'll deliver your software on time and on budget and I'll support you for as long as you need me to.</p>
-	</div>
+        <p>We build software. We've been doing it for over 20 years and we think we're pretty good at it.</p>
+        <p>We'll deliver your software on time and on budget and we'll support your software for as long as you need us to.</p>
+        <!-- <p>Oh, and we'll give you a guaranteed return on investment too. Who else can say that?</p>
+        <p><a class="btn btn-primary btn-lg" href="mailto:tellmemore@liquidjelly.co.uk?subject=Tell me more" role="button">OK you got me, lets chat &raquo;</a></p> -->
+      </div>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          and this is how I do it....
+          and this is how we do it....
         </div>
       </div>
       <div class="row">
 
         <div class="col-md-4">
           <h2>// gather</h2>
-          <p>You know your business. I know how to ask you the right questions, so you can tell me about your business. This ensures I can build you the right software first time.</p>
+          <p>You know your business. We know how to ask you the right questions, so you can tell us about your business. This ensures we can build you the right software first time.</p>
         </div>
         <div class="col-md-4">
           <h2>// design</h2>
-          <p>Writing good software isn't hard, but it can take time. My designs are thoughtful, appropriate and simple. I choose the right technology in the right places and I don't chase fads or fashions.</p>
+          <p>Writing good software isn't hard, but it can take time. Our designs are thoughtful, appropriate and simple. We choose the right technology in the right places and we don't chase fads or fashions.</p>
         </div>
         <div class="col-md-4">
           <h2>// build</h2>
-          <p>I use the right tools, at the right time, in the right way. I like to build fast and release frequently. I thrive off early customer engagement. I'm happy to be Agile or Rational. Or somewhere in between.</p>
+          <p>We use the right tools, at the right time, in the right way. We like to build fast and we like to build frequently. We thrive off early customer engagement. We're happy to be Agile or Rational. Or somewhere in between.</p>
        </div>
      </div>
      <div class="row">
         <div class="col-md-4">
          <h2>// test</h2>
-         <p>I utilise the latest tools to test my code on every build. Software is never bug free, so I work hard to track, report and prioritise bugs. Then, I squash them.</p>
+         <p>We utilise the latest tools to check and recheck our code on every build. Software is never bug free, so we work hard to track, report and prioritise bugs. Then we squash them.</p>
         </div>
         <div class="col-md-4">
           <h2>// deploy</h2>
-          <p>Your software has to be deployed, be it cloud, server or desktop. I'll ensure efficency, scalability and security.</p>
+          <p>Your software has to be deployed, be it cloud, server or desktop. We'll ensure efficency, scalability and security.</p>
         </div>
         <div class="col-md-4">
           <h2>// support</h2>
-          <p>Bespoke software is all about partnership. I don't dump and run. The code I create defines me and I'll stand by it for as long as I need to.</p>
+          <p>Bespoke software is all about partnership. We don't dump and run. The
+            code we create defines us and we'll stand by it for as long as you need us.</p>
         </div>
       </div>
 
@@ -141,8 +158,8 @@
 
       <div class="row">
          <div class="col-md-12">
-           <h2> // I <span class="glyphicon glyphicon-heart" aria-hidden="true" alt="love"></span> technology</h2>
-           <p>I spend my life surrounded by technology. I embrace it and learn how to use it properly. I use my experience to ensure I can offer the right technology at the right time.
+           <h2><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> // We love technology</h2>
+           <p>We spend our lives surrounded by technology. We embrace it and learn how to use it properly. We use our experience to ensure we can offer the right technology at the right time.
          </div>
          <div class="col-md-4">
           <h3>&lt; web /&gt;</h3>
@@ -183,14 +200,17 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> // I've been round the block a few times...</h2>
-          <p>Over the past 20 years, I have had the privilege of working with many prestigious companies on a wide variety of projects.</p>	
-	  <p>Recent successes include;</p>
+          <h2><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> // We've been round the block a few times...</h2>
+          <p>Over the past 20 years, we have had the privilege of working with many of the UK's most prestigious companies on a wide variety of projects.</p>
+
+          <p>Our technical expertise and dedication ensure we get repeat business and are on first choice supplier list for all of our current customers.</p>
+
+          <p>We're proudest of the work we've done on the following projects;</p>
         </div>
 
         <div class="col-md-4">
           <h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Parcel Tracking</h3>
-          <p>In addition to leading the conversion of the main UKMail website (static to CMS) I also played an integral role in the design and devleopment of the most used feature on the website - the online parcel tracker. This application processes over 1m requests per month, and aggregates information from multiple backend systems.</p>
+          <p>In addition to leading the conversion of the main UKMail website (static to CMS) we also played an integral role in the design and devleopment of the most used feature on the website - the online parcel tracker. This application processes over 1m hits per month, and aggregates information from multiple backend systems.</p>
         </div>
 
         <div class="col-md-4">
@@ -200,14 +220,14 @@
 
         <div class="col-md-4">
           <h3><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Document Generation</h3>
-          <p>An automated tool to generate technical documentation for a sprawling environment of both managed and legacy systems. The tool iterates and compares multiple products, in multiple versions installed across multiple servers, and outputs a markdown based Wiki, that is always up-do-date. </p>
+          <p>An automated tool to generate technical documentation for a sprawling environment of both managed and legacy systems. The tool iterates and compares multiple products, in multiple versions installed across multiple servers, and outputs a Wiki, that is always up-do-date. </p>
         </div>
       </div>
 
       <div class="row">
 
         <div class="col-md-12">
-          <p>I've also worked on projects for the following companies, both directly and indirectly;</p>
+          <p>We've also worked on projects for the following companies, both directly and indirectly;</p>
           <hr>
         </div>
 
@@ -301,7 +321,7 @@
 
       </div>
 
-      <!--<hr>
+      <hr>
 
       <div class="row">
         <div class="col-md-12">
@@ -323,12 +343,12 @@
           <hr>
           <p>Remuneration for all roles is generous and will be based on experience. NO AGENCIES. Want to find out more? <a href="mailto:iwanttoworkforyou@liquidjelly.co.uk">Email us</a> your CV and we'll get right back to you. Seriously, no agencies. </p>
         </div>
-      </div>-->
+      </div>
       <hr>
 
       <footer>
         <p>
-          &copy; 2011 | LiquidJelly Ltd is a registered company in England and Wales. <br/>
+          &copy; 2011 - 2016 LiquidJelly Ltd is a registered company in England and Wales. <br/>
 	        Registered Company Number: 07530917 | VAT Registration Number: 106 4284 35 <br/>
         </p>
       </footer>

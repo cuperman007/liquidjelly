@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-HeavyItalic.eot');
+    src: local('FS Elliot Pro Heavy Italic'), local('FSElliotPro-HeavyItalic'),
+        url('FSElliotPro-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-HeavyItalic.woff2') format('woff2'),
+        url('FSElliotPro-HeavyItalic.woff') format('woff'),
+        url('FSElliotPro-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-Light.eot');
+    src: local('FS Elliot Pro Light'), local('FSElliotPro-Light'),
+        url('FSElliotPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-Light.woff2') format('woff2'),
+        url('FSElliotPro-Light.woff') format('woff'),
+        url('FSElliotPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-Italic.eot');
+    src: local('FS Elliot Pro Italic'), local('FSElliotPro-Italic'),
+        url('FSElliotPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-Italic.woff2') format('woff2'),
+        url('FSElliotPro-Italic.woff') format('woff'),
+        url('FSElliotPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-Heavy.eot');
+    src: local('FS Elliot Pro Heavy'), local('FSElliotPro-Heavy'),
+        url('FSElliotPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-Heavy.woff2') format('woff2'),
+        url('FSElliotPro-Heavy.woff') format('woff'),
+        url('FSElliotPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-ThinItalic.eot');
+    src: local('FS Elliot Pro Thin Italic'), local('FSElliotPro-ThinItalic'),
+        url('FSElliotPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-ThinItalic.woff2') format('woff2'),
+        url('FSElliotPro-ThinItalic.woff') format('woff'),
+        url('FSElliotPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro.eot');
+    src: local('FS Elliot Pro'), local('FSElliotPro'),
+        url('FSElliotPro.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro.woff2') format('woff2'),
+        url('FSElliotPro.woff') format('woff'),
+        url('FSElliotPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-Bold.eot');
+    src: local('FS Elliot Pro Bold'), local('FSElliotPro-Bold'),
+        url('FSElliotPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-Bold.woff2') format('woff2'),
+        url('FSElliotPro-Bold.woff') format('woff'),
+        url('FSElliotPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-LightItalic.eot');
+    src: local('FS Elliot Pro Light Italic'), local('FSElliotPro-LightItalic'),
+        url('FSElliotPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-LightItalic.woff2') format('woff2'),
+        url('FSElliotPro-LightItalic.woff') format('woff'),
+        url('FSElliotPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-BoldItalic.eot');
+    src: local('FS Elliot Pro Bold Italic'), local('FSElliotPro-BoldItalic'),
+        url('FSElliotPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-BoldItalic.woff2') format('woff2'),
+        url('FSElliotPro-BoldItalic.woff') format('woff'),
+        url('FSElliotPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FS Elliot Pro';
+    src: url('FSElliotPro-Thin.eot');
+    src: local('FS Elliot Pro Thin'), local('FSElliotPro-Thin'),
+        url('FSElliotPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('FSElliotPro-Thin.woff2') format('woff2'),
+        url('FSElliotPro-Thin.woff') format('woff'),
+        url('FSElliotPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
