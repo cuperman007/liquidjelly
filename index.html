@@ -83,59 +83,83 @@
       font-size: 1.2em;
     }
 
-    .blue  p {
-      color: white;
-      font-size: 1.3em;
-      font-weight: 600;
-      padding-top: 0.7em;
+    .dark-blue
+    {      
+      padding-top: 6em;
+      padding-bottom:6em;
     }
 
-    .blue h3{
-      color: #FF707D;
-      font-size: 1.3em;
-      font-weight: 900;
-      padding-top: 0.7em;
+    .blue,
+    .pale {      
+      padding-top: 2em;
+      padding-bottom:3em;
     }
+      
+    .dark-blue {
+      background-color: #1C2185;
+      color: #fff;
+    }
+      .dark-blue h2 {
+        font-size: 3em;
+        font-family: 'FS Elliot Pro';
+        font-weight: 900;
+        font-style: normal;
+      }
 
     .blue {
       background-color: #0561FF;
       color: #fff;
     }
+
+    .blue  p,    
+    .dark-blue p {
+      color: #fff;
+      font-size: 1.3em;
+      font-weight: 600;
+      padding-top: 0.7em;
+    }
+
+      .blue h3{
+        color: #FF707D;
+        font-size: 1.3em;
+        font-weight: 900;
+        padding-top: 0.7em;
+      }
+
    
     .pale {
       background-color: #fff;
       color: #0561FF;
     }
 
-    .pale h2
-    {      
-      color: #0561FF;
-      font-size: 3em;
-      font-weight: 900;
-      padding-top: 0.7em;
-      text-align: center;
-    }
-    
-    .pale h3
-    {      
-      color: #0561FF;
-      font-size: 1.5em;
-      font-weight: 600;
-      padding-top: 0.7em;
-      text-align: center;
-      padding:1em;
-    }
-    
-    .pale h4
-    {      
-      color: #FF707D;
-      font-size: 1.5em;
-      font-weight: 600;
-      padding-top: 0.7em;
-      text-align: center;
-      padding:1em;
-    }
+      .pale h2
+      {      
+        color: #0561FF;
+        font-size: 3em;
+        font-weight: 900;
+        text-align: center;
+      }
+      
+      .pale h3
+      {      
+        color: #0561FF;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-align: center;
+        padding:1em;
+      }
+      
+      .pale h4
+      {      
+        color: #FF707D;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding-top: 0.7em;
+        text-align: center;
+        padding:1em;
+      }
 
+      
     .navbar,
     .jumbotron {
       background-color: #0561FF;
@@ -157,6 +181,15 @@
 
     .how{
       padding: 2em;
+    }
+
+    .footer {
+      text-shadow: none;
+      color: #fff;
+      text-align: center;
+      font-size: 0.8em;
+      line-height: 1.2em;
+      padding-bottom: 1em;
     }
 
   </style>
@@ -212,7 +245,7 @@
 
   <div class="container-fluid blue">
 
-    <div class="container pt-5">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h1 class="">Smarter, faster, software solutions.</h1>
@@ -230,7 +263,7 @@
 
   <div class="container-fluid pale">
 
-    <div class="container pt-5">
+    <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
           <h1>And this is how we do it...</h1>
@@ -471,8 +504,24 @@
       </div>
     </div>
   </div>
-
   
+  <div class="container-fluid dark-blue">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <h2 class="text-center">Get in touch</h2>
+        <div class="col-md-4 text-center">
+          <p>
+            If you have a project ready to go, or just a seedling of an idea you can reach out to us for a friendly, no commitment chat. There will be no hard sell and we are happy to sign a confidentiality agreement.
+          </p> 
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-4 text-center">
+          <a class="btn btn-secondary" text="Contact-us" href="mailto:hello@liquidjelly.co.uk">Contact us</a>  
+        </div> 
+      </div>
+    </div>
+  </div>
 
   <!-- <div class="container-fluid pale">
     <div class="container">
@@ -504,17 +553,21 @@
       </div>
     </div> -->
 
-  </div>
-
-      <footer>
-        <p>
-          &copy; 2011 - 2016 LiquidJelly Ltd is a registered company in England and Wales. <br />
-          Registered Company Number: 07530917 | VAT Registration Number: 106 4284 35 <br />
-        </p>
-      </footer>
-    </div> <!-- /container -->
-  </div>
-  </div>
+    <div class="container-fluid blue footer">
+      <div class="container">
+        <div class="row justify-content-md-center py-5">
+          <div class="col-md-2 m-5">
+            <img src="/images/logos/2x/Asset 1@2x.png" class="img-fluid">
+          </div>          
+        </div>
+        <div class="row justify-content-md-center">
+          <footer>
+              &copy; 2011 - 2016 LiquidJelly Ltd is a registered company in England and Wales. <br />
+              Registered Company Number: 07530917 | VAT Registration Number: 106 4284 35 <br />
+          </footer>
+        </div> <!-- /container -->
+      </div>
+    </div>
 
 
   <!-- Latest compiled and minified JavaScript -->
