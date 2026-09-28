@@ -89,7 +89,7 @@ sectors=[
 ('Retail',['Argos','Diesel','Cotswold Group','SuperGroup']),
 ('Software & Technology',['Crimson','Pin Digital','NEC Technologies','Southalls Safety Cloud'])]
 sectorhtml=''
-for sector,names in sectors:
+for sector_index,(sector,names) in enumerate(sectors):
  sector_id=sector.lower().split(' / ')[0].replace(' & ','-')
  items=[]
  for name in names:
@@ -103,8 +103,10 @@ for sector,names in sectors:
  # Each identical half is wider than the viewport, including shorter sectors.
  repeats=max(1,(7+len(items)-1)//len(items))
  group=''.join(items)+''.join(''.join(items).replace('<li>','<li aria-hidden="true" inert>') for _ in range(repeats-1))
- duration=len(items)*repeats*200/30
- sectorhtml+=f'<article class="sector"><h3>{sector}</h3><div class="sector-window"><div class="marquee-track sector-track" style="--sector-duration:{duration:.1f}s"><ul>{group}</ul><ul aria-hidden="true" inert>{group}</ul></div></div></article>'
+ speed=[27,32,29,34,26,31,28][sector_index]
+ duration=len(items)*repeats*200/speed
+ direction="reverse" if sector_index%2 else "normal"
+ sectorhtml+=f'<article class="sector"><h3>{sector}</h3><div class="sector-window"><div class="marquee-track sector-track" style="--sector-duration:{duration:.1f}s;--sector-direction:{direction}"><ul>{group}</ul><ul aria-hidden="true" inert>{group}</ul></div></div></article>'
 
 services=[('01','Find the right starting point','AI advice & discovery','Identify where AI could help and what it would take to use it. Work through your data, costs and constraints, then define a focused first project.','A clear scope and a way to measure success.'),('02','Test it against real work','Prototypes & feasibility','Try the idea with representative tasks. Explore where it performs well, where it struggles and whether it warrants further investment.','A working prototype and evidence for the next decision.'),('03','Connect it to your business','AI integration & automation','Bring AI into existing applications and workflows, with appropriate permissions, review steps and a record of what happened.','One connected workflow, ready to test and improve.'),('04','Help your team put it to use','AI-assisted development','Introduce AI into coding, testing and documentation with practical guidance. Keep review, testing and responsibility clear.','A team workflow tried on real development work.')]
 servicehtml=''.join(f'<article class="service-row"><div><p class="eyebrow subsection-label">{icon(["search","flask-conical","workflow","code-xml"][int(n)-1])}<span>01.{n} {label}</span></p><h3>{title}</h3></div><div><p>{copy}</p><p class="outcome">{outcome}</p></div></article>' for n,title,label,copy,outcome in services)
