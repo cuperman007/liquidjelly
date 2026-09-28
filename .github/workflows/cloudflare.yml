@@ -1,0 +1,60 @@
+name: LiquidJelly Cloudflare
+on:
+  push:
+    branches: [cf-pages]
+    paths: ['site/**', '.github/workflows/cloudflare.yml']
+  pull_request:
+    branches: [cf-pages]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: liquidjelly-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run build
+      - run: npm run types && npm run check
+      - run: npm test
+      - run: npx wrangler deploy --dry-run
+  deploy:
+    if: github.ref == 'refs/heads/cf-pages' && github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run build
+      - name: Provision database and spam protection, migrate and deploy
+        run: node scripts/deploy.mjs
+        env:
+          CLOUDFLARE_ACCOUNT_ID: f44a9a37fae8f8c1f4161be73b6289ce
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Verify deployed site
+        run: node scripts/smoke.mjs
