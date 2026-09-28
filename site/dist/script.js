@@ -2,14 +2,14 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const word = document.getElementById('typed-word');
   const hero = document.querySelector('.hero');
-  const track = document.querySelector('.marquee-track');
+  const tracks = document.querySelectorAll('.marquee-track');
   const words = ['development', 'testing', 'deployment', 'design'];
   let index = 0, deleting = true, timer, heroVisible = true;
   function syncMotion() {
     clearTimeout(timer);
     const active = !reduced.matches && !document.hidden;
     hero?.classList.toggle('typing-paused', !active || !heroVisible);
-    track?.classList.toggle('paused', !active);
+    tracks.forEach(track => track.classList.toggle('paused', !active));
     if (active && word && heroVisible) timer = setTimeout(tick, 120);
   }
   function tick() {
