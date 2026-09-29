@@ -33,3 +33,6 @@ nav .nav-contact{border-bottom:0}
 /* Independent ribbons, with centred headings above each sector. */
 .sector{display:block;padding:26px 0 30px}.sector h3{text-align:center;margin:0 0 23px;font-size:17px;line-height:1.4}.sector-track{animation-direction:var(--sector-direction,normal)}
 @media(max-width:620px){.sector{padding:23px 0 26px}.sector h3{margin-bottom:20px}}
+
+.enquiry-page{min-height:calc(100vh - var(--header-height));padding-block:70px}.enquiry-page .idea-form{margin:0}.enquiry-page h1{font-size:clamp(42px,4.7vw,64px)}.enquiry-page .contact-grid>div:first-child>p:not(.eyebrow){max-width:440px}
+@media(max-width:620px){.enquiry-page{padding-block:42px}.enquiry-page .contact-grid{gap:38px}}

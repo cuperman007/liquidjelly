@@ -65,6 +65,8 @@
     window.addEventListener('scroll', scheduleNavigation, {passive: true});
     window.addEventListener('resize', scheduleNavigation);
     updateNavigation();
+  } else if (/\/contact(?:\.html)?\/?$/.test(location.pathname)) {
+    document.querySelector('.nav-contact')?.setAttribute('aria-current', 'location');
   } else if (location.pathname.includes('/work/')) {
     links.find(link => link.hash === '#experience')?.setAttribute('aria-current', 'location');
   }

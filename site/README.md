@@ -36,7 +36,7 @@ npm run dev
 
 The zero UUID and empty public site key in the committed config are local placeholders. The deployment script resolves real resources without committing their secrets. Local form submission fails closed until test Turnstile settings are supplied using ignored `.dev.vars`; use Cloudflare's documented testing keys and a test hostname. Never configure test keys in production.
 
-`build.py` generates the homepage, privacy page and seven case studies from `content/case-studies.md`. CSS, client JavaScript and local assets are in `dist/`. The Python static preview on port 8765 shows the design but cannot accept enquiries; use Wrangler to test the backend.
+`build.py` generates the homepage, separate contact form, privacy page, sector page and seven case studies from `content/case-studies.md`. CSS, client JavaScript and local assets are in `dist/`. The Python static preview on port 8765 shows the design but cannot accept enquiries; use Wrangler to test the backend.
 
 ## Cost and service limits
 
