@@ -1,1 +1,21 @@
-{"name":"liquidjelly-website","private":true,"type":"module","scripts":{"build":"python3 build.py","dev":"wrangler dev","types":"wrangler types","check":"tsc --noEmit","test":"node --test tests/*.test.mjs","deploy":"wrangler deploy"},"devDependencies":{"@cloudflare/workers-types":"^5.20260928.1","@types/node":"^26.6.3","miniflare":"^5.20260926.0-alpha","typescript":"^7.0.2","wrangler":"^4.142.0"}}
+{
+  "name": "liquidjelly-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 build.py",
+    "dev": "wrangler pages dev dist",
+    "types": "wrangler types",
+    "check": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "deploy": "node scripts/deploy.mjs",
+    "pages:build": "wrangler pages functions build --outdir .wrangler/pages-build"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260928.1",
+    "@types/node": "^26.6.3",
+    "miniflare": "^5.20260926.0-alpha",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.142.0"
+  }
+}

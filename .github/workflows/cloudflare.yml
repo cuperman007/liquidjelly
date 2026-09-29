@@ -1,4 +1,4 @@
-name: LiquidJelly Cloudflare
+name: LiquidJelly Cloudflare Pages
 on:
   push:
     branches: [cf-pages]
@@ -31,7 +31,7 @@ jobs:
       - run: npm run build
       - run: npm run types && npm run check
       - run: npm test
-      - run: npx wrangler deploy --dry-run
+      - run: npm run pages:build
   deploy:
     if: github.ref == 'refs/heads/cf-pages' && github.event_name != 'pull_request'
     needs: verify
@@ -51,7 +51,7 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - run: npm run build
-      - name: Provision database and spam protection, migrate and deploy
+      - name: Provision Pages, D1 and Turnstile, migrate and deploy
         run: node scripts/deploy.mjs
         env:
           CLOUDFLARE_ACCOUNT_ID: f44a9a37fae8f8c1f4161be73b6289ce

@@ -34,7 +34,7 @@ export default {
   /** @param {Request} request @param {Env} env */
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (!url.pathname.startsWith('/api/')) return env.ASSETS.fetch(request);
+    if (!url.pathname.startsWith('/api/')) return json({error:'Not found.'},404);
     if (url.pathname === '/api/form-config' && request.method === 'GET') {
       return json({siteKey:env.TURNSTILE_SITE_KEY || null});
     }
@@ -64,9 +64,5 @@ export default {
       console.error(JSON.stringify({event:'enquiry_save_failed'}));
       return json({error:'We could not save your enquiry. Please try again or email hello@liquidjelly.co.uk.'},503);
     }
-  },
-  /** @param {ScheduledController} _controller @param {Env} env */
-  async scheduled(_controller, env) {
-    await env.DB.prepare("DELETE FROM enquiries WHERE created_at < strftime('%Y-%m-%dT%H:%M:%fZ','now','-12 months')").run();
   }
 };

@@ -13,6 +13,7 @@ before(async()=>{
  db=await mf.getD1Database('DB');
  const sql=await readFile(new URL('../migrations/0001_enquiries.sql',import.meta.url),'utf8');
  for(const statement of sql.split(';').filter(x=>x.trim())) await db.prepare(statement).run();
+ await db.prepare(await readFile(new URL('../migrations/0002_enquiry_retention.sql',import.meta.url),'utf8')).run();
 });
 after(async()=>{await mf.dispose();});
 test('valid enquiry is persisted exactly; HTML and quotes remain inert data',async t=>{
@@ -53,7 +54,8 @@ test('API has no public enquiry listing route',async()=>{
 });
 test('retention removes expired enquiries and preserves current records',async()=>{
  await db.prepare("INSERT INTO enquiries (id,created_at,name,email,interest,message) VALUES ('old','2020-01-01T00:00:00.000Z','Old','old@example.com','Something else','An older enquiry for retention testing')").run();
- await worker.scheduled({},env());
+ // The AFTER INSERT trigger also removes a newly inserted expired record.
+
  assert.equal(await db.prepare("SELECT id FROM enquiries WHERE id='old'").first(),null);
  assert.equal((await db.prepare('SELECT count(*) AS count FROM enquiries').first()).count,1);
 });
