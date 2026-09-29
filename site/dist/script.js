@@ -118,3 +118,35 @@
     finally { button.disabled = false; window.turnstile.reset(widget); }
   });
 })();
+
+(() => {
+  const work = document.querySelector('.selected-work');
+  if (!work) return;
+  const headings = [...work.querySelectorAll('.work-heading')];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let pending = false;
+  function render() {
+    pending = false;
+    work.classList.toggle('work-scroll-effects', !reduced.matches);
+    if (reduced.matches) return;
+    const headerBottom = document.querySelector('.site-header')?.getBoundingClientRect().bottom || 0;
+    const entrance = Math.min(180, innerHeight * .22);
+    for (const heading of headings) {
+      const bounds = heading.getBoundingClientRect();
+      const entering = (innerHeight - 35 - bounds.top) / entrance;
+      const leaving = (bounds.bottom - headerBottom - 20) / 110;
+      const progress = Math.max(0, Math.min(1, entering, leaving));
+      // Smoothstep gives a gentle arrival and departure in either scroll direction.
+      const eased = progress * progress * (3 - 2 * progress);
+      heading.style.setProperty('--work-reveal', eased.toFixed(3));
+    }
+  }
+  function schedule() {
+    if (!pending) { pending = true; requestAnimationFrame(render); }
+  }
+  window.addEventListener('scroll', schedule, {passive:true});
+  window.addEventListener('resize', schedule);
+  reduced.addEventListener('change', schedule);
+  document.fonts?.ready.then(schedule);
+  render();
+})();

@@ -39,3 +39,5 @@ PHOENIX, DHL/UK Mail, Crimson, Pin Digital, O2, Vodafone, EE, BT, Orange and Die
 - ICO, international transfers: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/international-transfers/a-guide-to-international-transfers/
 
 Copy describes proposed consultancy work, not a certification or blanket compliance guarantee. Local processing, storage location, access, subprocessors and applicable jurisdiction are treated as separate considerations.
+
+- UK Mail featured-project logo: https://commons.wikimedia.org/wiki/File:UK_Mail_logo2.svg — MillieCoutts, CC BY-SA 4.0. Original SVG retained; CSS greyscale display. Public attribution on credits.html.

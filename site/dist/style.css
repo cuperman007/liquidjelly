@@ -36,3 +36,12 @@ nav .nav-contact{border-bottom:0}
 
 .enquiry-page{min-height:calc(100vh - var(--header-height));padding-block:70px}.enquiry-page .idea-form{margin:0}.enquiry-page h1{font-size:clamp(42px,4.7vw,64px)}.enquiry-page .contact-grid>div:first-child>p:not(.eyebrow){max-width:440px}
 @media(max-width:620px){.enquiry-page{padding-block:42px}.enquiry-page .contact-grid{gap:38px}}
+/* Featured projects: quiet scroll-driven reveals, with a readable static fallback. */
+.work-heading{display:grid;grid-template-columns:160px minmax(0,1fr);gap:30px;align-items:center;margin:22px 0;--work-reveal:1}
+.work-heading .work-logo{width:160px;height:60px;object-fit:contain;object-position:left center;filter:grayscale(1) brightness(.7);opacity:.85}
+.work-heading h3{margin:0;max-width:650px}.selected-work .work-item>div>p:not(.eyebrow),.selected-work .work-item .small{margin-left:190px}
+.work-scroll-effects .work-heading h3{opacity:var(--work-reveal);transform:translate3d(0,calc((1 - var(--work-reveal))*28px),0);filter:blur(calc((1 - var(--work-reveal))*3px))}
+.work-scroll-effects .work-heading .work-logo{opacity:calc(var(--work-reveal)*.85);transform:translate3d(calc((1 - var(--work-reveal))*-18px),0,0) scale(calc(.96 + var(--work-reveal)*.04))}
+.work-scroll-effects .work-item:focus .work-heading{--work-reveal:1!important}
+@media(max-width:620px){.work-heading{grid-template-columns:1fr;gap:20px;margin:20px 0}.work-heading .work-logo{width:140px;height:48px}.selected-work .work-item>div>p:not(.eyebrow),.selected-work .work-item .small{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.work-scroll-effects .work-heading{--work-reveal:1!important}.work-scroll-effects .work-heading h3,.work-scroll-effects .work-heading .work-logo{transform:none;filter:none}.work-scroll-effects .work-heading .work-logo{filter:grayscale(1) brightness(.7)}}

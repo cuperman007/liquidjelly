@@ -51,3 +51,5 @@ Sources checked 28 September 2026:
 - https://developers.cloudflare.com/turnstile/get-started/server-side-validation/
 
 Brand sources are in ASSET-SOURCES.md. Relationship descriptions distinguish contract work, employed experience and customer platforms. One continuous scrolling row includes all companies across the seven sectors; reduced-motion preferences show static lists. Subsection numbers use the 01 / 01 format. Duplicate cards are hidden from assistive technology and keyboard focus. CV employers and customer brands are included with relationship labels; names without a matching logo use plain type. Historical company dates and claims have not been extended beyond the available source material. Pages remain noindex while under review.
+
+Featured experience headlines include greyscale PHOENIX and UK Mail logos. Headline/logo opacity and position follow scroll position in both directions; keyboard focus reveals the title and reduced-motion preferences keep it static. UK Mail artwork attribution is published on credits.html.
